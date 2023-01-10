@@ -5,12 +5,12 @@ class Grid:
         self.height = 3
         self.width = 3
         self.tiles = [
-        [Tile(1,0,0,0),Tile(1,0,0,0),Tile(1,0,0,0)],
-        [Tile(1,1,1,0),Tile(0,0,1,1),Tile(1,0,1,0)],
-        [Tile(0,1,1,0),Tile(0,1,0,1),Tile(0,0,1,1)]
+        [Tile(1,0,0,0,0),Tile(1,0,0,0,1),Tile(1,0,0,0,0)],
+        [Tile(1,1,1,0,1),Tile(0,0,1,1,1),Tile(1,0,1,0,0)],
+        [Tile(0,1,1,0,0),Tile(0,1,0,1,0),Tile(0,0,1,1,1)]
     ]
 
-        self.build_grid()
+        #self.build_grid()
 
     def display_grid(self):
         for x in self.tiles:
@@ -18,10 +18,10 @@ class Grid:
                 print(tile, end=" - ")
 
 
-    def build_grid(self):
+    """def build_grid(self):
         for h in range(self.height):
             line = []
             for w in range(self.width):
                 line.append(Tile(1,1,1,1))
-            self.tiles.append(line)
+            self.tiles.append(line)"""
                 
