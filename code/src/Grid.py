@@ -5,9 +5,9 @@ class Grid:
         self.height = 3
         self.width = 3
         self.tiles = [
-        [Tile(1,0,0,0),Tile(1,0,0,0),Tile(1,0,0,0)],
-        [Tile(1,1,1,0),Tile(0,0,1,1),Tile(1,0,1,0)],
-        [Tile(0,1,1,0),Tile(0,1,0,1),Tile(0,0,1,1)]
+        [Tile(1,0,0,0,0),Tile(1,0,0,0,1),Tile(1,0,0,0,0)],
+        [Tile(1,1,1,0,1),Tile(0,0,1,1,1),Tile(1,0,1,0,0)],
+        [Tile(0,1,1,0,0),Tile(0,1,0,1,0),Tile(0,0,1,1,1)]
     ]
 
         self.build_grid()
