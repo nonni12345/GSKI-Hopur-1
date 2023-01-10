@@ -2,4 +2,4 @@ from src.TileTraveller import TileTraveller
 
 game = TileTraveller()
 
-game.print_grid()
+print(game.display_player())
